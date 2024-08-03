@@ -9,7 +9,7 @@ import { useState } from 'react';
 
 
 function App() {
-  const [Items,setItems]=useState(JSON.parse(localStorage.getItem('todolist')));
+  const [Items,setItems]=useState((JSON.parse(localStorage.getItem('todolist'))));
   const handleDelete = (id) =>{
     console.log("function called")
     console.log(id);
